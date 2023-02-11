@@ -7,7 +7,7 @@ const Heropage = () => {
         <section className='section-1'>
             <h1 className='heading'>
                 Hello, I'm <br/>
-                Jatin lll Kumar.
+                Jatin Kumar.
                 <br/>
                 <span className='sub-heading'>
                 I am a DevOps Engineer.
