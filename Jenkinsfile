@@ -31,6 +31,12 @@ pipeline {
         bat 'docker push jatin1008/react'
       }
     }
+    stage('applying changes to pod')
+    {
+      steps{
+        bat 'kubectl apply -f development.yaml'
+      }
+    }
     
   }
 }
