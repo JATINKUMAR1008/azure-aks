@@ -31,6 +31,11 @@ pipeline {
         bat 'docker push jatin1008/react'
       }
     }
+    stage('login in azure'){
+      steps{
+        bat 'az login -u "21CDO1011@cuchd.in" -p "suntu@1008"'
+      }
+    }
     stage('applying changes to pod')
     {
       steps{

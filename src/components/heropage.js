@@ -10,7 +10,7 @@ const Heropage = () => {
                 Jatin Kumar.
                 <br/>
                 <span className='sub-heading'>
-                I am a DevOps Engineer.
+                I am a happy DevOps Engineer.
                 </span>
             </h1>
             <br/>
