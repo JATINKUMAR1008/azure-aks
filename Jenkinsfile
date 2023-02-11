@@ -31,6 +31,17 @@ pipeline {
         bat 'docker push jatin1008/react'
       }
     }
+     stage('terraform init'){
+      
+          steps {
+            bat 'terraform init'
+          }
+    }
+    stage('terraform apply') {     
+          steps {
+            bat 'terraform apply --auto-approve'
+          }
+    }
     
   }
 }
