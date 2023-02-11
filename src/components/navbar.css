@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+.Nav-box{
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    background-color: antiquewhite;  
+    justify-content: space-between;
+    color: hsl(346, 90%, 66%);
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    top: 0;
+}   
+.logo{
+    margin: 1px;
+    font-family: 'Caramel', cursive;
+    margin-left: 70px;
+    cursor: pointer;
+    font-size: 80px;
+    width: 20%;
+}
+.Nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin-right: 80px;
+    letter-spacing: 20px;
+    width:60%;
+}
+
+.nav-item{
+    
+    margin-left: 30px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    
+}
+.nav-item:hover{
+    color:white;
+   
+    transition: 300ms;
+
+}
+.logo:hover{
+    color:white;
+    
+    transition: 300ms;
+    
+}
+.icon{
+    display: none;
+    padding: 1rem;
+    margin: 4rem;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.icon-contact{
+    
+    padding: 1rem;
+    margin: 4rem;
+    cursor: pointer;
+    font-size: 50px;
+}
+.icon-contact:hover{
+   color: white;
+   text-decoration: underline;
+   transition: 300ms;
+}
+
+@media screen and (max-width:1350px) {
+    .Nav-list{
+        font-size: 20px;
+    }
+    .logo{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:1053px) {
+    .Nav-list{
+        font-size: 20px;
+        margin: 3rem;
+    }
+    .logo{
+        margin-left: 2rem;
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .Nav-box{
+        justify-content: space-between;
+        height: 150px;
+        position: relative;
+    }
+    .Nav-list{
+        display: none;
+    }
+    .logo{
+        margin-top: 44px;
+        height: 100%;
+        align-items: center;
+    
+    }
+    .icon{
+        display: block;
+
+    }
+  }
+

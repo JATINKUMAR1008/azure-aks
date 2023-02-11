@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.Hero-container{
+   margin-top:10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    
+   background-color: antiquewhite;
+   
+   
+
+}
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.section-1 h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+.section-2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+.svg-Image{
+   width: 100%;
+}
+@media screen and (max-width:850px) {
+
+    .Hero-container{
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        margin-top: 1rem;
+    }
+    .section-1 h1{
+        font-size: 30px;
+    }
+    .section-2{
+        width: 100%;
+    }
+    .svg-Image{
+        width: 70%;
+    }
+    .section-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+    
+}

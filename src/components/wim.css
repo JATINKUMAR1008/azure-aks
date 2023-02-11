@@ -1,0 +1,24 @@
+.wim-container{
+    margin-top:30px;
+    margin: 20px;
+    padding: 60px;
+}
+.wim-heading{
+    
+    font-size: 50px;
+    text-decoration: underline;
+}
+.sub-text{
+    font-size: 30px;
+    word-wrap: break-word;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:850px){
+    .wim-container h1{
+        font-size: 40px;
+    }
+    .sub-text{
+        font-size: 30px;
+    }
+}
