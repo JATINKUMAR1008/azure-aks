@@ -39,7 +39,7 @@ pipeline {
     }
     stage('Kubectl'){
       steps{
-        bat 'kubectl'
+        bat 'kubectl get all'
       }
     }
      
