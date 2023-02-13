@@ -25,7 +25,7 @@ pipeline {
         user= credentials('Docker')
       }
       steps{
-          bat 'docker login --username $user_USR --password $user_PSW'
+          bat 'docker login --username $user --password $user_PSW'
           
       }
       
