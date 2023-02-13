@@ -21,17 +21,23 @@ pipeline {
           }
     }
     stage('dockerhub login'){
+      withCredentials
       steps{
-        bat 'docker login --username "jatin1008" --password "Suntu@1008"'
+        
+        withCredentials([usernamePassword(credentialsId: 'c204344a-b88c-4279-b0e3-eb4fb875c750', passwordVariable: 'pass', usernameVariable: 'user')]) {
+          bat 'docker login --username $user --password $pass'
+          }
       }
+      
     }
+    
     stage('Pushing to docker hub')
     {
       steps{
         bat 'docker push jatin1008/react'
       }
     }
-    
+     
     
   }
 }
