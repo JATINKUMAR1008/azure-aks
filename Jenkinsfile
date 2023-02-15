@@ -37,11 +37,6 @@ pipeline {
         bat 'docker push jatin1008/react'
       }
     }
-    stage('Kubectl'){
-      steps{
-        bat 'kubectl get all'
-      }
-    }
      
     
   }
