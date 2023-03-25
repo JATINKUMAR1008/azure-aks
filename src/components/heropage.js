@@ -15,7 +15,6 @@ const Heropage = () => {
             </h1>
             <br/>
             
-                
             
         </section>  
         <section className='section-2'>
